@@ -13,14 +13,14 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #e6faff;
-    color: #222;
+    background-color: #ecfae5; /* Light green */
+    color: #222; /* Text color remains unchanged */
 }
 
 header {
-    background-color: #00bcd4;
+    background-color: #cae8bd; /* Soft green */
     color: white;
-    border-bottom: 5px solid #008b9e;
+    border-bottom: 5px solid #b0db9c; /* Darker green */
     display: flex;
     flex-wrap: wrap;
     position: fixed;
@@ -47,7 +47,7 @@ div.half{
 }
 
 div.color{
-    background-color: #0097a7;
+    background-color: #b0db9c; /* Darker green */
 }
 
 header.hide {
@@ -59,16 +59,17 @@ h1 {
     font-size: 2em;
     letter-spacing: 1px;
     text-align: center;
+    color: #b0db9c; /* Darker green for headings */
 }
 
 nav {
-    background-color: #0097a7;
+    background-color: #b0db9c; /* Darker green */
     text-align: center;
     padding: 0.8em 0;
 }
 
 nav a {
-    color: #e0ffff;
+    color: #ecfae5; /* Light green for links */
     text-decoration: none;
     margin: 0 20px;
     font-weight: bold;
@@ -80,14 +81,14 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #00acc1;
+    background-color: #cae8bd; /* Soft green on hover */
 }
 
 main {
     padding: 2em;
     max-width: 900px;
     margin: auto;
-    background: white;
+    background: #ecfae5; /* Light green */
     margin-top: 17vh;
     border-radius: 20px;
 }
@@ -103,7 +104,7 @@ ul li {
     padding-left: 1.6em;
     margin-bottom: 0.7em;
     font-size: 1.05em;
-    color: #006064;
+    color: #006064; /* Keep text color for contrast */
     line-height: 1.6;
     list-style: none;
     list-style: none;
@@ -117,25 +118,25 @@ ul li {
 
 .card {
     display: flex;
-    background: #f0faff;
-    border: 1px solid #b2ebf2;
+    background: #ecfae5; /* Light green */
+    border: 1px solid #ddf6d2; /* Pale green border */
     border-radius: 20px;
     width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.1);
+    box-shadow: 0 4px 12px rgba(221, 246, 210, 0.1); /* Subtle shadow */
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 6px 14px rgba(0, 188, 212, 0.25);
+    box-shadow: 0 6px 14px rgba(221, 246, 210, 0.25); /* Slightly stronger shadow */
 }
 
 .card img {
     width: 40%;
     height: auto;
     object-fit: cover;
-    border-right: 1px solid #d0faff;
+    border-right: 1px solid #ecfae5;
 }
 
 .card-content {
@@ -147,7 +148,7 @@ ul li {
     margin-top: 0;
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #006064;
+    color: #b0db9c; /* Darker green for headings */
 }
 
 .card-content p {
@@ -157,8 +158,8 @@ ul li {
 
 footer {
     min-height: 30vh;
-    background: linear-gradient(120deg, #00bcd4 70%, #0097a7 100%);
-    color: #e0ffff;
+    background: linear-gradient(120deg, #cae8bd 70%, #b0db9c 100%); /* Gradient with soft and darker green */
+    color: white;
     margin-top: 40px;
     padding: 2em 0 1em 0;
     display: flex;
@@ -168,7 +169,7 @@ footer {
     box-sizing: border-box;
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
-    box-shadow: 0 -4px 24px rgba(0,188,212,0.10);
+    box-shadow: 0 -4px 24px rgba(176, 219, 156, 0.1); /* Subtle shadow */
 }
 
 .footerTop {
@@ -199,7 +200,7 @@ footer {
 }
 
 footer a {
-    color: #e0ffff;
+    color: #ecfae5; /* Light green for footer links */
     text-decoration: none;
     margin: 8px 0;
     font-weight: 500;
@@ -214,16 +215,15 @@ footer a {
         border-bottom 0.25s;
     display: inline-block;
     letter-spacing: 0.5px;
-    border-bottom: 2px solid rgba(224,255,255,0.18);
+    border-bottom: 2px solid rgba(202, 232, 189, 0.18); /* Subtle underline */
 }
 
 footer a:hover,
 footer a:focus {
-    background: rgba(0, 188, 212, 0.10);
-    color: #fff;
-    text-shadow: 0 2px 8px rgba(0,188,212,0.13);
-    border-bottom: 2px solid #e0ffff;
-    outline: none;
+    background: rgba(202, 232, 189, 0.1); /* Slight hover effect */
+    color: #fff; /* White text on hover */
+    text-shadow: 0 2px 8px rgba(202, 232, 189, 0.13);
+    border-bottom: 2px solid #ecfae5; /* Light green underline */
 }
 
 footer > a {
