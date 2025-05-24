@@ -6,16 +6,25 @@
     <title>My Portfolio - Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body></body>
-    <header>
-        <h1>wazzAPP-egz</h1>
+
+<body>
+    <header id="header" class="show">
+        <div class="half">
+            <h1>wazzAPP-egz</h1>
+        </div>
+        <div class="half color">
+            <nav>
+                <a href="#HealthyLearning">Healthy learning</a>
+                <a href="#About">About us</a>
+                <a href="#Stress">Why stress is bad for you?</a>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="#HealthyLearning">Healthy learning</a>
-        <a href="#Stress">Why stress is bad for you?</a>
-    </nav>
 
     <main>
+        <section id="About">
+            <h3>About wazzAPP-egz</h3>
+        </section>
         <section id="HealthyLearning">
             <h3>Healthy Learning</h3>
             <div class="card-container">
@@ -42,6 +51,7 @@
                 </div>
             </div>
         </section>
+
         <section id="Stress">
             <h3>Why stress is bad for you</h3>
             <div class="card-container">
@@ -70,10 +80,25 @@
         </section>
     </main>
 
-    <footer>
+    <footer>d
         &copy; 2025 My Portfolio
     </footer>
 
+    <script>
+        let lastScrollY = window.scrollY;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                // Scrolling down
+                header.classList.add('hide');
+            } else {
+                // Scrolling up
+                header.classList.remove('hide');
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
 </body>
 
 </html>
