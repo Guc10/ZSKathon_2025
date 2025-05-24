@@ -1,12 +1,15 @@
-.roboto-font {
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* .roboto-font {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 250;
   font-style: normal;
-}
+} */
 
 *{
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -19,7 +22,6 @@ body {
 
 header {
     background-color: #cae8bd; /* Soft green */
-    color: white;
     border-bottom: 5px solid #b0db9c; /* Darker green */
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +35,7 @@ header {
 }
 
 div.half{
+    
     height: 50%;
     width: 100%;
     display: flex;
@@ -59,7 +62,7 @@ h1 {
     font-size: 2em;
     letter-spacing: 1px;
     text-align: center;
-    color: #b0db9c; /* Darker green for headings */
+    color: rgb(86,72,59); /* Darker green for headings */
 }
 
 nav {
@@ -69,7 +72,7 @@ nav {
 }
 
 nav a {
-    color: #ecfae5; /* Light green for links */
+    color: rgb(86,72,59); /* Darker green for headings */
     text-decoration: none;
     margin: 0 20px;
     font-weight: bold;
@@ -82,6 +85,8 @@ nav a {
 
 nav a:hover {
     background-color: #cae8bd; /* Soft green on hover */
+    color: rgba(86, 72, 59, 0.774); /* Darker green for headings */
+
 }
 
 main {
@@ -191,16 +196,20 @@ footer {
     align-items: flex-start;
     padding: 10px 0;
     box-sizing: border-box;
+
 }
 
 .footerSection .logo {
     width: 90%;
     height: auto;
     margin-bottom: 10px;
+    background-color: rgb(86,72,59); /* Darker green for headings */
+    border-radius: 20px;
+    padding: -10px;
 }
 
 footer a {
-    color: #ecfae5; /* Light green for footer links */
+    color: rgb(86,72,59); /* Darker green for headings */
     text-decoration: none;
     margin: 8px 0;
     font-weight: 500;
@@ -221,7 +230,7 @@ footer a {
 footer a:hover,
 footer a:focus {
     background: rgba(202, 232, 189, 0.1); /* Slight hover effect */
-    color: #fff; /* White text on hover */
+    color: rgb(56, 47, 39); /* Darker green for headings */
     text-shadow: 0 2px 8px rgba(202, 232, 189, 0.13);
     border-bottom: 2px solid #ecfae5; /* Light green underline */
 }
@@ -235,6 +244,7 @@ footer > a {
     background: none;
     text-align: center;
     display: block;
+
 }
 
 @media (max-width: 768px) {
