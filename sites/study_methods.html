@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>wazzApp - teaches how to learn</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../images/fav.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="show">
+        <div class="half">
+            <h1>wazzAPP-egz</h1>
+        </div>
+        <div class="half color">
+            <nav>
+                <a href="#StudyMethods">Metody dobrej nauki</a>
+            </nav>
+        </div>
+    </header>
+    <h3>Efektywne metody nauki</h3>
+    <main id="StudyMethods">
+        <div class="card-container">
+            <div class="card">
+                <img src="https://placecats.com/milo/280/160" alt="Pomodoro">
+                <div class="card-content">
+                    <h3>🍅 Technika Pomodoro</h3>
+                    <ul>
+                        <li>⏲️ Ustawiasz timer na 25 minut nauki, potem 5 minut przerwy. Po czterech
+                            rundach – dłuższy odpoczynek. Tak nauczysz się więcej niż robiąc 5 godzinny maraton.</li>
+                        <li>📵 Zero telefonu, zero rozpraszaczy – tylko nauka. Potem przerwa na memy albo Reelsy, jak
+                            trzeba.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placecats.com/luna/280/160" alt="Active Recall">
+                <div class="card-content">
+                    <h3>🧠 Aktywne przypominanie (Active Recall)</h3>
+                    <ul>
+                        <li>❓ Zamiast czytać po raz setny te same notatki, zamknij oczy i spróbuj sobie
+                            przypomnieć, co czytałeś. Albo zadawaj pytania sam sobie.</li>
+                        <li>📚 To męczy mózg, ale działa. Lepiej wyuczyć coś tak, niż tylko udawać, że się coś ogarnia,
+                            czytając 50 razy to samo.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placecats.com/leo/280/160" alt="Spacing">
+                <div class="card-content">
+                    <h3>📆 Rozłożenie nauki w czasie (Spaced Repetition)</h3>
+                    <ul>
+                        <li>🔁 Zamiast kuć dzień przed, ucz się po trochu przez kilka dni. Mózg potrzebuje
+                            czasu, żeby to wszystko przetrawić.</li>
+                        <li>🧱 Krótkie sesje co jakiś czas robią robotę lepiej niż 10 godzin na raz, po których i tak
+                            nie pamiętasz wszystkich założeń.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placecats.com/nova/280/160" alt="Feynman">
+                <div class="card-content">
+                    <h3>🗯️ Metoda Feynmana</h3>
+                    <ul>
+                        <li>🧑‍🏫 Tłumacz materiał jakbyś gadał z kimś kto kompletnie nie rozumie – prosto i z przekazem. Jeśli nie
+                            umiesz wyjaśnić, to znaczy, że musisz się jeszcze pouczyć.</li>
+                        <li>🪞 Mów na głos, pisz na kartce, gadaj do lustra – wszystko jedno. Bylebyś potrafił to dobrze wytłumaczyć.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placecats.com/oscar/280/160" alt="Environment">
+                <div class="card-content">
+                    <h3>🌍 Odpowiednie środowisko nauki</h3>
+                    <ul>
+                        <li>📵 Wyłącz rozpraszacze – telefon, social media, głośne dźwięki. To nie pora
+                            na scrollowanie Instagrama, tylko na prawdziwą naukę.</li>
+                        <li>🪑 Biurko, krzesło, światło – nie ucz się na kanapie. Mózg musi czuć, że to
+                            strefa pracy.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footerTop">
+            <div class="footerSection">
+                <img src="../images/logo.svg" alt="logo" class="logo">
+
+            </div>
+            <div class="footerSection">
+                <a href="../index.html">O nas</a>
+                <a href="healthy_learning.html">Zdrowa nauka</a>
+                <a href="#StudyMethods">Efektowne metody nauki</a>
+                <a href="stress.html">Stres</a>
+            </div>
+            <div class="footerSection">
+                <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                <a href="tel:+48795316931">+48 123 456 789</a>
+            </div>
+        </div>
+        <a href="#">&copy;2025 wazzAPP-egz</a>
+    </footer>
+
+    <script>
+        let lastScrollY = window.scrollY;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                // Scrolling down
+                header.classList.add('hide');
+            } else {
+                // Scrolling up
+                header.classList.remove('hide');
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
+</body>
+
+</html>
