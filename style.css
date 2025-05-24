@@ -94,6 +94,34 @@ main {
     box-shadow: 0 0 15px rgba(0, 188, 212, 0.1);
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1em 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.6em;
+    margin-bottom: 0.7em;
+    font-size: 1.05em;
+    color: #006064;
+    line-height: 1.6;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 0.3em;
+    top: 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+    background: linear-gradient(135deg, #00bcd4 60%, #0097a7 100%);
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0,188,212,0.10);
+    display: inline-block;
+}
+
 .card-container {
     display: flex;
     flex-direction: column;
@@ -141,58 +169,85 @@ main {
 }
 
 footer {
-    height: 45vh;
-    background-color: #00bcd4;
-    color: white;
+    min-height: 30vh;
+    background: linear-gradient(120deg, #00bcd4 70%, #0097a7 100%);
+    color: #e0ffff;
     margin-top: 40px;
-    padding: 1em;
-
+    padding: 2em 0 1em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    box-shadow: 0 -4px 24px rgba(0,188,212,0.10);
 }
 
-.footerTop{
+.footerTop {
     width: 90%;
-    height: 100%;
+    max-width: 1100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 24px;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
 }
 
 .footerSection {
-    height: 100%;
-    width: 30%;
-
+    width: 28%;
+    min-width: 180px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+    box-sizing: border-box;
 }
 
-.logo{
-    width: 70%;
-    height: 70%;
+.footerSection .logo {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.footerSection a {
+footer a {
     color: #e0ffff;
     text-decoration: none;
     margin: 8px 0;
     font-weight: 500;
     font-size: 1.08em;
-    padding: 8px 16px;
-    border-radius: 8px;
-    background: linear-gradient(90deg, #00bcd4 60%, #0097a7 100%);
-    transition: background 0.3s, color 0.3s, transform 0.2s;
+    padding: 3px 0;
+    border-radius: 4px;
+    background: none;
+    transition: 
+        color 0.25s,
+        background 0.25s,
+        text-shadow 0.25s,
+        border-bottom 0.25s;
     display: inline-block;
-    box-shadow: 0 2px 8px rgba(0,188,212,0.08);
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(224,255,255,0.18);
 }
 
-.footerSection a:hover {
-    background: linear-gradient(90deg, #0097a7 60%, #00bcd4 100%);
+footer a:hover,
+footer a:focus {
+    background: rgba(0, 188, 212, 0.10);
     color: #fff;
-    transform: translateY(-2px) scale(1.04);
-    box-shadow: 0 4
+    text-shadow: 0 2px 8px rgba(0,188,212,0.13);
+    border-bottom: 2px solid #e0ffff;
+    outline: none;
+}
+
+footer > a {
+    margin-top: 1.5em;
+    font-size: 1em;
+    opacity: 0.7;
+    border: none;
+    padding: 0;
+    background: none;
+    text-align: center;
+    display: block;
 }
 
 @media (max-width: 768px) {
