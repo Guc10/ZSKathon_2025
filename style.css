@@ -98,30 +98,6 @@ main {
     border-radius: 20px;
 }
 
-/* Style for the main links */
-main a {
-    display: inline-block;
-    text-decoration: none;
-    color: #b0db9c; /* Darker green */
-    font-weight: bold;
-    font-size: 1.2em;
-    margin: 10px 0;
-    padding: 10px 20px;
-    border: 2px solid #b0db9c; /* Border matching the color scheme */
-    border-radius: 10px;
-    background-color: #ecfae5; /* Light green background */
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-}
-
-main a:hover {
-    background-color: #cae8bd; /* Soft green on hover */
-    color: #fff; /* White text on hover */
-    border-color: #cae8bd; /* Match border with hover background */
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 4px 10px rgba(176, 219, 156, 0.3); /* Subtle shadow */
-}
-
 ul {
     list-style: none;
     padding-left: 0;
